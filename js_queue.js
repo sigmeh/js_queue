@@ -50,8 +50,8 @@ function queue(max_items){
 		keys.sort();
 		
 		var contents = [];
-		for (var k in keys){
-			! isNaN(keys[k]) ? contents.push(this[keys[k]]) : {};	
+		for (k=0; k < keys.length; k++){
+			! isNaN(keys[k]) ? contents.push(this[keys[k]]) : {};
 		}
 		return contents;
 	}
